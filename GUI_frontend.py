@@ -1,6 +1,6 @@
 from tkinter import *
 import pandas as pd
-import sg_backend
+import GUI_backend
 
 def view_command():
     list1.delete(0, END)
@@ -12,7 +12,7 @@ def download_command():
 
 window = Tk()
 window.geometry("1000x500")
-window.wm_title("Korsika Transforliste")
+window.wm_title("Korsika Transferliste")
 
 
 Button1 = Button(window, text= 'Preview list', command = view_command)
@@ -32,8 +32,5 @@ scrollb1.grid(row = 5, column = 4, rowspan = 2, sticky=N+S+W)
 
 list1.configure(yscrollcommand=scrollb1.set)
 scrollb1.configure(command=list1.yview)
-
-
-
 
 window.mainloop()
