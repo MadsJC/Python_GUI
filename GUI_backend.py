@@ -5,10 +5,10 @@ import datetime as dt
 
 def connect():
     mydb = mysql.connector.connect(
-    host="phhw-140801.cust.powerhosting.dk",
-    user="ruby-rejser_dk",
-    passwd="Yg4M0w1g6mOKM3C2",
-    database="ruby-rejser_dk")
+    host=" XXXX ",
+    user=" XXXX ",
+    passwd=" XXXX ",
+    database=" XXXX ")
 
 SQL_command = "SELECT CONCAT('#',sales_order.increment_id) as 'increment_id', \
         fornavn.value as 'Fornavn', efternavn.value as 'Efternavn', \
@@ -37,10 +37,10 @@ SQL_command = "SELECT CONCAT('#',sales_order.increment_id) as 'increment_id', \
 
 def view():
     mydb = mysql.connector.connect(
-    host="phhw-140801.cust.powerhosting.dk",
-    user="ruby-rejser_dk",
-    passwd="Yg4M0w1g6mOKM3C2",
-    database="ruby-rejser_dk")
+    host=" XXXX ",
+    user=" XXXX ",
+    passwd=" XXXX ",
+    database=" XXXX ")
     mycursor = mydb.cursor()
     mycursor.execute(SQL_command)
     myresult = mycursor.fetchall()
@@ -48,10 +48,10 @@ def view():
 
 def download():
     mydb = mysql.connector.connect(
-    host="phhw-140801.cust.powerhosting.dk",
-    user="ruby-rejser_dk",
-    passwd="Yg4M0w1g6mOKM3C2",
-    database="ruby-rejser_dk")
+    host=" XXXX ",
+    user=" XXXX ",
+    passwd=" XXXX ",
+    database=" XXXX ")
     mycursor = mydb.cursor()
     mycursor.execute(SQL_command)
     myresult = mycursor.fetchall()
